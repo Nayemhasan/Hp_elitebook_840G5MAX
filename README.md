@@ -107,7 +107,7 @@ Write-Host "Power plan commands exported to $filePath"
 - Now go to the app location (C:\Program Files (x86)\NoteBook FanControl\Configs) and copy and paste both the xmls from this [release]()
 - Run the NBFC application and chose any of these Hp elitebook 840 g5 fan configs and set auto or set to max as you want and hit enable.
 <p align="left">
-  <img src="https://img.shields.io/github/downloads/watermelonvault/Melon_booster/total?style=social">
+  <img src="https://github.com/Nayemhasan/Hp_elitebook_840G5MAX/blob/main/Resources/fan.png">
 </p>
 - Done🍉
 
