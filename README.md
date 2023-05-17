@@ -117,3 +117,9 @@ Write-Host "Power plan commands exported to $filePath"
 powercfg -import "the path of that config file path"
 ```
 - go to control panel and select the power plan and all set.
+<p align="left">
+  <img src="https://github.com/Nayemhasan/Hp_elitebook_840G5MAX/blob/main/Resources/powerplan.png">
+</p>
+
+- Done🍉
+
