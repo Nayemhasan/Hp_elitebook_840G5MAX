@@ -9,7 +9,7 @@ Max fan speed with custom power plan to get max performance from HP ELITEBOOK 84
 - maxed out everything even on battery power mode too *enable dc turbo boost from bios
 - process states maxed out to 100% for no reason*
 
-`Fan xml to the max`
+`🍉Fan xml to the max`
 ```bash
 <?xml version="1.0"?>
 <FanControlConfigV2 xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -101,3 +101,9 @@ $allCommands | Out-File -FilePath $filePath -Encoding ASCII
 Write-Host "Power plan commands exported to $filePath"
 
 ```
+## How to use? Fan speed xml
+- Download the NBFC app and install it [release](https://github.com/hirschmann/nbfc/releases/tag/1.6.3)
+- Now go to the app location (C:\Program Files (x86)\NoteBook FanControl\Configs) and copy and paste both the xmls from this [release]()
+- Run the NBFC application and chose any of these Hp elitebook 840 g5 fan configs and set auto or set to max as you want.
+- Done🍉
+
