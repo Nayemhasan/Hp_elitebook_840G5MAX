@@ -30,15 +30,15 @@ Max fan speed with custom power plan to get max performance from HP ELITEBOOK 84
       <FanDisplayName>CPU fan</FanDisplayName>
       <TemperatureThresholds></TemperatureThresholds>
       <FanSpeedPercentageOverrides>
-        <FanSpeedPercentageOverride>
-          <FanSpeedPercentage>0</FanSpeedPercentage>
-          <FanSpeedValue>255</FanSpeedValue>
-        </FanSpeedPercentageOverride>
+      <FanSpeedPercentageOverride>
+      <FanSpeedPercentage>0</FanSpeedPercentage>
+      <FanSpeedValue>255</FanSpeedValue>
+      </FanSpeedPercentageOverride>
       </FanSpeedPercentageOverrides>
-    </FanConfiguration>
-  </FanConfigurations>
-  <RegisterWriteConfigurations>
-    <RegisterWriteConfiguration>
+      </FanConfiguration>
+      </FanConfigurations>
+      <RegisterWriteConfigurations>
+      <RegisterWriteConfiguration>
       <WriteMode>Set</WriteMode>
       <WriteOccasion>OnInitialization</WriteOccasion>
       <Register>34</Register>
@@ -46,8 +46,8 @@ Max fan speed with custom power plan to get max performance from HP ELITEBOOK 84
       <ResetRequired>true</ResetRequired>
       <ResetValue>1</ResetValue>
       <Description>Select thermal zone</Description>
-    </RegisterWriteConfiguration>
-    <RegisterWriteConfiguration>
+      </RegisterWriteConfiguration>
+      <RegisterWriteConfiguration>
       <WriteMode>Set</WriteMode>
       <WriteOccasion>OnInitialization</WriteOccasion>
       <Register>38</Register>
