@@ -109,5 +109,5 @@ Write-Host "Power plan commands exported to $filePath"
 <p align="left">
   <img src="https://github.com/Nayemhasan/Hp_elitebook_840G5MAX/blob/main/Resources/fan.png">
 </p>
-- Done🍉
+
 
