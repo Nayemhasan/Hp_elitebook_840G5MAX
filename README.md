@@ -58,3 +58,46 @@ Max fan speed with custom power plan to get max performance from HP ELITEBOOK 84
   </RegisterWriteConfigurations>
 </FanControlConfigV2>
 ```
+`🍉Powerplan`
+```bash
+$laptopSettingsCommands = @(
+    "powercfg -setacvalueindex $guid SUB_VIDEO VIDEOIDLE 0",
+    "powercfg -setacvalueindex $guid SUB_VIDEO BRIGHTNESS 100",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS LIDACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS LIDCLOSEACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS POWERBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS SLEEPBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS LIDOPENPOWERBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS POWERBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS SLEEPBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS LIDOPENPOWERBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_PROCESSOR PROCTHROTTLEMAX 100",
+    "powercfg -setacvalueindex $guid SUB_PROCESSOR PROCTHROTTLEMIN 100",
+    "powercfg -setacvalueindex $guid SUB_PROCESSOR PROCTHROTTLEPCT 100"
+)
+
+# Configure power plan settings for desktops
+$desktopSettingsCommands = @(
+    "powercfg -setacvalueindex $guid SUB_PROCESSOR PROCTHROTTLEMAX 100",
+    "powercfg -setacvalueindex $guid SUB_PROCESSOR PROCTHROTTLEMIN 100",
+    "powercfg -setacvalueindex $guid SUB_PROCESSOR PROCTHROTTLEPCT 100",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS POWERBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS SLEEPBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS LIDOPENPOWERBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS POWERBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS SLEEPBUTTONACTION 0",
+    "powercfg -setacvalueindex $guid SUB_BUTTONS LIDOPENPOWERBUTTONACTION 0"
+)
+
+# Activate the power plan
+$activatePowerPlanCommand = "powercfg -setactive $guid"
+
+# Combine all commands into a single array
+$allCommands = $createPowerPlanCommand, $laptopSettingsCommands, $desktopSettingsCommands, $activatePowerPlanCommand
+
+# Write commands to the text file
+$allCommands | Out-File -FilePath $filePath -Encoding ASCII
+
+Write-Host "Power plan commands exported to $filePath"
+
+```
