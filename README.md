@@ -110,4 +110,10 @@ Write-Host "Power plan commands exported to $filePath"
   <img src="https://github.com/Nayemhasan/Hp_elitebook_840G5MAX/blob/main/Resources/fan.png">
 </p>
 
-
+## How to use? Powerplan
+- Download the latest [release]()
+- Run cmd as a administrator and type this
+```bash
+powercfg -import "the path of that config file path"
+```
+- go to control panel and select the power plan and all set.
