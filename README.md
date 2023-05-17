@@ -104,14 +104,14 @@ Write-Host "Power plan commands exported to $filePath"
 ```
 ## How to use? Fan speed xml
 - Download the NBFC app and install it [release](https://github.com/hirschmann/nbfc/releases/tag/1.6.3)
-- Now go to the app location (C:\Program Files (x86)\NoteBook FanControl\Configs) and copy and paste both the xmls from this [release]()
+- Now go to the app location (C:\Program Files (x86)\NoteBook FanControl\Configs) and copy and paste both the xmls from this [releasehttps://github.com/Nayemhasan/Hp_elitebook_840G5MAX/releases/tag/V.1
 - Run the NBFC application and chose any of these Hp elitebook 840 g5 fan configs and set auto or set to max as you want and hit enable.
 <p align="left">
   <img src="https://github.com/Nayemhasan/Hp_elitebook_840G5MAX/blob/main/Resources/fan.png">
 </p>
 
 ## How to use? Powerplan
-- Download the latest [release]()
+- Download the latest [release](https://github.com/Nayemhasan/Hp_elitebook_840G5MAX/releases/tag/V.1)
 - Run cmd as a administrator and type this
 ```bash
 powercfg -import "the path of that config file path"
