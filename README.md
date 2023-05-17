@@ -1,6 +1,6 @@
 # Hp_elitebook_840G5MAX
 Max fan speed with custom power plan to get max performance from HP ELITEBOOK 840 G5
-## Aout the fan xml
+## About the fan xml
 - fan xml stripped form the latest bios
 - adjusted Ec Poll Interval to 100ms to better cool off the cpu
 - auto mode kick in faster than stock to max speed
@@ -9,6 +9,7 @@ Max fan speed with custom power plan to get max performance from HP ELITEBOOK 84
 - maxed out everything even on battery power mode too *enable dc turbo boost from bios
 - process states maxed out to 100% for no reason*
 
+## What's in the code?
 `🍉Fan xml to the max`
 ```bash
 <?xml version="1.0"?>
