@@ -89,18 +89,6 @@ $desktopSettingsCommands = @(
     "powercfg -setacvalueindex $guid SUB_BUTTONS SLEEPBUTTONACTION 0",
     "powercfg -setacvalueindex $guid SUB_BUTTONS LIDOPENPOWERBUTTONACTION 0"
 )
-
-# Activate the power plan
-$activatePowerPlanCommand = "powercfg -setactive $guid"
-
-# Combine all commands into a single array
-$allCommands = $createPowerPlanCommand, $laptopSettingsCommands, $desktopSettingsCommands, $activatePowerPlanCommand
-
-# Write commands to the text file
-$allCommands | Out-File -FilePath $filePath -Encoding ASCII
-
-Write-Host "Power plan commands exported to $filePath"
-
 ```
 ## How to use? Fan speed xml
 - Download the NBFC app and install it [release](https://github.com/hirschmann/nbfc/releases/tag/1.6.3)
